@@ -39,7 +39,7 @@ nav a {
 
 /* --- Hero/Home Section --- */
 .hero {
-    background: url('backg.jfif') center/cover no-repeat; /* Replace with your actual background image URL */
+    background: url('background - Copy.jpg') center/cover no-repeat; /* Replace with your actual background image URL */
     height: 60vh;
     display: flex;
     justify-content: center;
@@ -232,3 +232,4 @@ footer {
     }
 
 }
+
