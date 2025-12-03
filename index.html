@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golden Coop - Farm Fresh Poultry & Eggs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">The Golden Coop</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">Our Methods</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Farm-Fresh, Free-Range Excellence</h1>
+            <p>Sustainably raised poultry and eggs, delivered with integrity from our family farm.</p>
+            <a href="#about" class="cta-button">See Our Farming Practices</a>
+        </div>
+        </section>
+
+    <section id="about" class="content-section">
+        <h2>🐔 Our Ethical Farming Methods</h2>
+        <div class="about-grid">
+            <div>
+                <h3>Pasture-Raised</h3>
+                <p>Our chickens spend their days foraging on lush, open pastures, leading to happier birds and tastier products.</p>
+            </div>
+            <div>
+                <h3>Non-GMO Feed</h3>
+                <p>We use only locally sourced, non-GMO grains and feed, ensuring the highest quality nutrition for our flock.</p>
+            </div>
+            <div>
+                <h3>Family Owned</h3>
+                <p>A multi-generational commitment to traditional farming and ethical animal welfare. This isn't just a business; it's our home.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="content-section products-section">
+        <h2>🥚 Our Products & Availability</h2>
+        
+        <div class="product-item-with-image">
+            <img src="D:\CODING\DGPF\images\jogoo.jfif" alt="Our Farm-Raised Whole Iproved Kienyeji Chicken" class="product-image">
+            <div class="product-details">
+                <h3>Whole Improved kienyeji Chickens</h3>
+                <p>Our slow-grown birds offer tender meat and superior flavor. Perfect for roasting.
+                    In addition to the White eggs with strong shells.
+                </p>
+            </div>
+        </div>
+
+        <div class="product-item-with-image">
+            <img src="D:\CODING\DGPF\images\chick-Brown-Commercial-Layers-Brown-Nick.png" alt="Our Farm-Raised Whole Commercial layer Chicken" class="product-image">
+            <div class="product-details">
+                <h3>Whole Commercial Layer Chickens</h3>
+                <p>Our laying flock, sourced from world-class genetics, delivers consistent excellence starting from Point of Lay at 18-20 weeks. 
+                    These hens are expertly managed to sustain a peak production rate above 90%, 
+                    resulting in reliable volume and over 300 eggs per cycle. 
+                    We guarantee superior quality, including strong shells, a rich, vibrant yolk color, and ideal sizing, 
+                    ensuring every egg meets the high standards your business demands for freshness and market appeal.
+                </p>
+                <p>Transitioning from their highly productive laying cycle at $\approx 72-78$ weeks, 
+                    our ex-layers offer a premium, flavorful meat option. 
+                    Unlike young broilers, these mature hens possess lean, robust muscle tissue, 
+                    making them the ideal choice for creating rich, savory stocks, authentic bone broths, 
+                    and slow-cooked dishes. Choosing our spent hens is a sustainable and economical choice for consumers seeking depth of flavor and culinary tradition.</p>
+            </div>
+        </div>
+
+        <div class="product-item-with-image">
+            <img src="D:\CODING\DGPF\images\brown eggs.jfif" alt="Farm Fresh Brown Eggs" class="product-image">
+            <div class="product-details">
+                <h3>Pastured Brown Eggs</h3>
+                <p>Rich, vibrant yolks and strong shells, packed with flavor. Available by the dozen.</p>
+            </div>
+        </div>
+        
+        <div class="product-item-with-image">
+            <img src="D:\CODING\DGPF\images\white eggs.jfif" alt="Farm Fresh White Eggs" class="product-image">
+            <div class="product-details">
+                <h3>Heritage White Eggs</h3>
+                <p>From our special heritage breeds, these white eggs offer a delicate taste and beautiful appearance. Limited availability.</p>
+            </div>
+        </div>
+
+        <p class="availability-note">For wholesale inquiries or larger orders, please use the contact form below or call us directly.</p>
+    </section>
+
+    <section id="contact" class="content-section contact-section">
+        <h2>📍 Get In Touch</h2>
+        <div class="contact-details">
+            <p>📞 Phone: (+254) 799660486 <p>(+254) 786511283</p></p>
+            <p>📧 Email: dvdpresly@gmail.com</p>
+            <p>📍 Location: 105 Kawaya-Nyawara Rd, Kisian Junction</p>
+            <p class="hours">Farm Pickup Hours: Mon-Sun, 9am - 6pm</p>
+        </div>
+        
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message / Inquiry" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div id="formMessage" style="display:none; color: green; margin-top: 15px;">Thank you for your message! We will be in touch soon.</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 The Onyango's Poultry Farm-Fresh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Stop the form from actually submitting (since this is just a display)
+            document.getElementById('contactForm').reset(); // Clear the form
+            document.getElementById('formMessage').style.display = 'block'; // Show the thank you message
+            setTimeout(() => {
+                document.getElementById('formMessage').style.display = 'none';
+            }, 5000); // Hide message after 5 seconds
+        });
+    </script>
+</body>
+</html>

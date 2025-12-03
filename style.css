@@ -1,0 +1,233 @@
+/* --- Global Styles --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+a {
+    text-decoration: none;
+    color: #006400; /* Dark Green */
+}
+
+a:hover {
+    color: #38761d; /* Slightly lighter green on hover */
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #fcf8e3; /* Creamy light background */
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #8b4513; /* Earthy Brown */
+}
+
+nav a {
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+/* --- Hero/Home Section --- */
+.hero {
+    background: url('D:/CODING/DGPF/images/backg.jfif') center/cover no-repeat; /* Replace with your actual background image URL */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #38761d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #006400;
+}
+
+/* --- General Content Sections --- */
+.content-section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.content-section:nth-child(even) { /* Alternate background for better visual separation */
+    background-color: #fcf8e3;
+}
+
+h2 {
+    color: #8b4513;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+}
+
+/* --- About Grid --- */
+.about-grid {
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-grid div {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* --- Products Section & Images --- */
+.products-section {
+    max-width: 900px; /* Slightly wider to accommodate images */
+    margin: 0 auto;
+}
+
+.product-item-with-image {
+    display: flex;
+    align-items: center; /* Vertically align image and text */
+    gap: 30px; /* Space between image and text */
+    padding: 25px 0;
+    border-bottom: 1px dotted #ccc;
+    text-align: left;
+}
+
+.product-item-with-image:last-of-type { /* Use last-of-type for the last product item */
+    border-bottom: none;
+}
+
+.product-image {
+    width: 150px; /* Fixed width for product images */
+    height: 100px; /* Fixed height for product images */
+    object-fit:contain; /* Crop image to fit without distortion */
+    border-radius: 8px; /* Slightly rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+}
+
+.product-details {
+    flex: 1; /* Allow text to take remaining space */
+}
+
+.availability-note {
+    margin-top: 30px;
+    font-style: italic;
+    color: #666;
+}
+
+/* --- Contact Section & Form --- */
+.contact-section {
+    background-color: white;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+#contactForm {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+#contactForm button {
+    background-color: #38761d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+#contactForm button:hover {
+    background-color: #006400;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #8b4513; /* Earthy Brown */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* --- Mobile Responsiveness (For Screens <= 768px) --- */
+@media (max-width: 768px) {
+    .about-grid {
+        flex-direction: column; /* Stack columns vertically on mobile */
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .product-item-with-image {
+        flex-direction: column; /* Stack image and text vertically on mobile */
+        text-align: center;
+        gap: 15px; /* Adjust gap for vertical stacking */
+    }
+
+    .product-image {
+        width: 80%; /* Make images wider on mobile for better visibility */
+        height: auto; /* Auto height to maintain aspect ratio */
+        max-width: 200px; /* Cap max width for very large screens */
+    }
+}
